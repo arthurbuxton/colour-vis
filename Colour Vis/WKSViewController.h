@@ -11,10 +11,12 @@
 
 @class WKSPieChart;
 
-@interface WKSViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface WKSViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIPopoverControllerDelegate> {
+}
 
 @property (strong, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (strong, nonatomic) IBOutlet WKSPieChart *thePie;
+@property (strong, nonatomic) IBOutlet UIPopoverController *popover;
 
 - (IBAction)takePhoto:(id)sender;
 - (IBAction)selectPhoto:(id)sender;
