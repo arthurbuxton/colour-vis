@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/UTCoreTypes.h>
 
-@interface WKSViewController : UIViewController
+@class WKSPieChart;
+
+@interface WKSViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (strong, nonatomic) IBOutlet WKSPieChart *thePie;
+
+- (IBAction)takePhoto:(id)sender;
+- (IBAction)selectPhoto:(id)sender;
+- (void)scaleDownAndPosterize;
 
 @end
