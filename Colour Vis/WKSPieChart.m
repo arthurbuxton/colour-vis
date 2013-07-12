@@ -57,7 +57,7 @@
 
     // angles setup
     CGFloat radiansPerPixel = (2 * M_PI) / [self sum:self.colourFreqDict usingKeys:top20Keys];
-    NSLog(@"radiansPerPixel: %f", radiansPerPixel);
+//    NSLog(@"radiansPerPixel: %f", radiansPerPixel);
     __block CGFloat startAngle = 0.0;
     
 //    for (NSString *hexColor in [top20Keys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]) {
@@ -78,7 +78,7 @@
         CGFloat endAngle = startAngle - radians;
         [self drawSliceOfColor:color fromStart:startAngle toEnd:endAngle inBox:box withContext:context];
         startAngle = endAngle;
-        NSLog(@"%@, %@", hexColor, size);
+//        NSLog(@"%@, %@", hexColor, size);
     };
 }
 
@@ -109,7 +109,7 @@
     CGContextMoveToPoint(context, midX, midY);
     CGContextAddArc(context, midX, midY, radius, startAngle, endAngle, true);
     CGContextFillPath(context);
-    NSLog(@"%f -> %f", startAngle, endAngle);
+//    NSLog(@"%f -> %f", startAngle, endAngle);
 }
 
 //- (void)drawValue {

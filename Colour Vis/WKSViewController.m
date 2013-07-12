@@ -87,7 +87,7 @@
 
     CGImageRef histogramCG = [ci_context createCGImage:outputImage fromRect:[outputImage extent]];
     
-    NSLog(@"size: %zd x %zd", CGImageGetWidth (histogramCG), CGImageGetHeight(histogramCG));
+//    NSLog(@"size: %zd x %zd", CGImageGetWidth (histogramCG), CGImageGetHeight(histogramCG));
 
     UIImage *newImage = [UIImage imageWithCIImage:outputImage];
 
@@ -101,7 +101,7 @@
     // bpp?
     size_t bpp = CGImageGetBitsPerPixel (histogramCG);
     
-    NSLog(@"%zd --- %zd --- %d", bpp, bit_depth, alpha);
+//    NSLog(@"%zd --- %zd --- %d", bpp, bit_depth, alpha);
     // iterate over the pixels
     CFDataRef pixelData = CGDataProviderCopyData(CGImageGetDataProvider(histogramCG));
     UInt8 pixelDataBuffer[4];
@@ -109,7 +109,7 @@
     int pixelDataLength = CFDataGetLength (pixelData);
     int pixelByteSize = bpp / 8;
     
-    NSLog(@"%d", pixelByteSize);
+//    NSLog(@"%d", pixelByteSize);
     
     NSMutableDictionary *histogram = [[NSMutableDictionary alloc] init];
     
@@ -126,7 +126,7 @@
         }
     }
 //    NSLog(@"%@", histogram);
-    NSLog(@"%d", [[histogram allKeys] count]);
+//    NSLog(@"%d", [[histogram allKeys] count]);
     
     [self.thePie setColourFreqDict:histogram];
     [self.thePie setNeedsDisplay];
