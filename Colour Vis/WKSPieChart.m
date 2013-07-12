@@ -93,7 +93,7 @@
 - (NSUInteger)sum:(NSDictionary*)colorFreqDict usingKeys:(NSArray*)keys {
     NSUInteger total = 0;
     for (NSString *key in keys) {
-        total += [[colorFreqDict objectForKey:key] integerValue];
+        total += [colorFreqDict[key] integerValue];
     }
     return total;
 }
