@@ -55,7 +55,7 @@
     // GO!
     
     NSArray *topXKeys = [self top:[[[NSUserDefaults standardUserDefaults] objectForKey:@"num_colours"] integerValue] keysFromDictionary:self.colourFreqDict];
-    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"num_colours"]);
+//    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"num_colours"]);
     
     // angles setup
     CGFloat radiansPerPixel = (2 * M_PI) / [self sum:self.colourFreqDict usingKeys:topXKeys];
