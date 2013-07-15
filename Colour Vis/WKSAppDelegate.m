@@ -23,6 +23,14 @@
     }
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
+    // set UserDefaults
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *appDefaults = [NSDictionary dictionaryWithObject:@(5)
+                                                            forKey:@"num_colours"];
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
+
     return YES;
 }
 

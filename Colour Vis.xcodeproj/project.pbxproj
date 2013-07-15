@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C9428551178F36D800B0B4FD /* WKSPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C9428550178F36D800B0B4FD /* WKSPieChart.m */; };
 		C953F3EF178D40F20088C71E /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C953F3EE178D40F20088C71E /* CoreImage.framework */; };
+		C9D3FCB617940EE0006C9DBD /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C9D3FCB517940EE0006C9DBD /* Settings.bundle */; };
 		C9ED047717882EB400A7F58E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ED047617882EB400A7F58E /* UIKit.framework */; };
 		C9ED047917882EB400A7F58E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ED047817882EB400A7F58E /* Foundation.framework */; };
 		C9ED047B17882EB400A7F58E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9ED047A17882EB400A7F58E /* CoreGraphics.framework */; };
@@ -42,6 +43,7 @@
 		C942854F178F36D800B0B4FD /* WKSPieChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKSPieChart.h; sourceTree = "<group>"; };
 		C9428550178F36D800B0B4FD /* WKSPieChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKSPieChart.m; sourceTree = "<group>"; };
 		C953F3EE178D40F20088C71E /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		C9D3FCB517940EE0006C9DBD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		C9ED047317882EB400A7F58E /* Colour Vis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Colour Vis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9ED047617882EB400A7F58E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9ED047817882EB400A7F58E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,6 +137,7 @@
 				C9ED047D17882EB400A7F58E /* Supporting Files */,
 				C942854F178F36D800B0B4FD /* WKSPieChart.h */,
 				C9428550178F36D800B0B4FD /* WKSPieChart.m */,
+				C9D3FCB517940EE0006C9DBD /* Settings.bundle */,
 			);
 			path = "Colour Vis";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				C9ED048D17882EB400A7F58E /* Default-568h@2x.png in Resources */,
 				C9ED049317882EB400A7F58E /* WKSViewController_iPhone.xib in Resources */,
 				C9ED049617882EB400A7F58E /* WKSViewController_iPad.xib in Resources */,
+				C9D3FCB617940EE0006C9DBD /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

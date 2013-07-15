@@ -53,15 +53,17 @@
     box = CGRectInset(box, inset, inset);
     
     // GO!
-    NSArray *top20Keys = [self top:20 keysFromDictionary:self.colourFreqDict];
-
+    
+    NSArray *topXKeys = [self top:[[[NSUserDefaults standardUserDefaults] objectForKey:@"num_colours"] integerValue] keysFromDictionary:self.colourFreqDict];
+    NSLog(@"%@", [[NSUserDefaults standardUserDefaults] objectForKey:@"num_colours"]);
+    
     // angles setup
-    CGFloat radiansPerPixel = (2 * M_PI) / [self sum:self.colourFreqDict usingKeys:top20Keys];
+    CGFloat radiansPerPixel = (2 * M_PI) / [self sum:self.colourFreqDict usingKeys:topXKeys];
 //    NSLog(@"radiansPerPixel: %f", radiansPerPixel);
     __block CGFloat startAngle = 0.0;
     
 //    for (NSString *hexColor in [top20Keys sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)]) {
-    for (NSString *hexColor in top20Keys) {
+    for (NSString *hexColor in topXKeys) {
         NSNumber *size = [self.colourFreqDict objectForKey:hexColor];
         NSUInteger r;
         NSUInteger g;
